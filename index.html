@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Pomodoro Clock</title>
+</head>
+<body>
+    <header>
+        <h1>Pomodor Clock</h1>
+    </header>
+    <main>
+
+        <section>
+            <h1 id="break-label">Break Length</h1>
+            <button id="break-increment">&uarr;</button>
+            <output id="break-length"></output>
+            <button id="break-decrement">&darr;</button>
+        </section>
+            
+        <section>
+            <h1 id="session-label">session Length</h1>
+            <button id="session-increment">&uarr;</button>
+            <output id="session-length"></output>
+            <button id="session-decrement">&darr;</button>
+            
+        </section>
+        <section> 
+            <div aria-label="body for the clock" id="body-clock">
+                <h1 id="timer-label">Session</h1>
+                <audio  id="beep">
+                    <source type="audio/mp3" src="./sound/alarm-clock-01.mp3"/>
+                </audio>
+                <p id="time-left"></p>
+            </div>
+            <button id="start_stop"></button>
+            <button id="reset">&#8635;</button>
+        </section>
+
+    </main>
+    <script src="./js/jq.js"></script>
+    <script src="./js/moment.min.js"></script>
+    <script src="./js/index.js" ></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
